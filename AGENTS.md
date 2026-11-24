@@ -47,8 +47,8 @@ Hard rules, in short:
 3. Describe the current way of working. When the method changes, update the
    page in place and add a line to `docs/changelog.md`; do not keep outdated
    rules side by side with new ones.
-4. Do not publish the site or change GitHub Pages settings without the
-   owner's explicit approval.
+4. Merging to `main` publishes the site. Do not run the `pages` workflow
+   by hand or change Pages settings without the owner's explicit approval.
 
 Content structure: `docs/system/` describes the parts, `docs/workflows/` the
 recurring procedures, `docs/knowledge/` memory, skills and writing,

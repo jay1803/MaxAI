@@ -10,9 +10,8 @@ data, employer data and anything that only works in one private setup are left
 out on purpose.
 
 The content is published as a website from `docs/` with
-[MkDocs Material](https://squidfunk.github.io/mkdocs-material/). Until the site
-is live, read the Markdown files directly, starting at
-[`docs/index.md`](docs/index.md).
+[MkDocs Material](https://squidfunk.github.io/mkdocs-material/):
+<https://jay1803.github.io/MaxAI/>. Every merge to `main` updates the site.
 
 ## Layout
 

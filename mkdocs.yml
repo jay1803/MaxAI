@@ -1,5 +1,6 @@
 site_name: MaxAI
 site_description: How one person runs product work with a team of AI agents, written so others can copy it.
+site_url: https://jay1803.github.io/MaxAI/
 docs_dir: docs
 strict: true
 

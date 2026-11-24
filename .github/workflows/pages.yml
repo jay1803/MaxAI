@@ -1,10 +1,10 @@
-# Publishes the site to GitHub Pages.
-# Manual only on purpose: the site is not published until the owner approves
-# the content. To go live later, enable Pages (source: GitHub Actions) in the
-# repository settings and run this workflow, or add a push trigger on main.
+# Publishes the site to GitHub Pages on every merge to main.
+# Merging a pull request is the publish step; it can also be run by hand.
 name: pages
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
