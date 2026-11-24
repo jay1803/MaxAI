@@ -45,10 +45,18 @@
     for (var i = 0; i < heads.length; i++) {
       if (heads[i].getBoundingClientRect().top < 150) cur = heads[i]; else break;
     }
+    if (cur === last) return;
+    last = cur;
     if (cur) { sec.textContent = headText(cur); sep.hidden = false; }
     else { sec.textContent = ''; sep.hidden = true; }
   }
-  window.addEventListener('scroll', onScroll, { passive: true });
+  var last;
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () { ticking = false; onScroll(); });
+  }, { passive: true });
   onScroll();
 
   // Diagrams

@@ -11,7 +11,8 @@
   --rule:#232428;--rule-strong:#393B41;--deco:#5D6069;--mark:#2A2C31;--code-bg:#141518;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:auto;overscroll-behavior:none}
+body{overscroll-behavior:none}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 a{color:inherit;text-decoration:underline;text-decoration-color:var(--deco);text-decoration-thickness:1px;text-underline-offset:3px}
 a:hover{text-decoration-color:currentColor}
@@ -41,7 +42,7 @@ a:hover{text-decoration-color:currentColor}
 .bar-title{flex:0 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:500;color:var(--ink)}
 .bar-sep{color:var(--deco)}
 .bar-sec{flex:1 1 0;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink-3)}
-.bar-chev{flex:0 0 auto;display:inline-flex;color:var(--ink-3);transition:transform .2s;margin-left:auto}
+.bar-chev{flex:0 0 auto;display:inline-flex;color:var(--ink-3);margin-left:auto}
 .bar-btn:hover .bar-chev{color:var(--ink)}
 .bar-btn[aria-expanded="true"] .bar-chev{transform:rotate(180deg)}
 .site-index{padding:8px 0 28px;max-height:calc(100vh - 120px);overflow:auto}
@@ -93,7 +94,7 @@ a:hover{text-decoration-color:currentColor}
 .prose h2::before{content:counter(sec,decimal-leading-zero);display:block;margin-bottom:10px;font-size:14px;font-weight:400;letter-spacing:0;color:var(--ink-3);font-variant-numeric:tabular-nums}
 .home-prose h2:first-of-type{margin-top:72px}
 .prose h3{margin:2.2em 0 .7em;font-size:1.0625em;line-height:1.5;font-weight:600;letter-spacing:-.005em;color:var(--ink);scroll-margin-top:130px}
-.prose .headerlink{margin-left:.35em;color:var(--deco);text-decoration:none;opacity:0;transition:opacity .15s;font-weight:400}
+.prose .headerlink{margin-left:.35em;color:var(--deco);text-decoration:none;opacity:0;font-weight:400}
 .prose h2:hover .headerlink,.prose h3:hover .headerlink{opacity:1}
 .prose ul,.prose ol{list-style:none;margin:0 0 1.3em;padding:0}
 .prose li{position:relative;padding-left:1.75em;margin:0 0 .65em}
@@ -135,7 +136,7 @@ a:hover{text-decoration-color:currentColor}
 
 /* Pager */
 .pager{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:var(--measure);margin-top:96px}
-.pn{display:flex;flex-direction:column;gap:4px;padding:18px 20px;border:1px solid var(--rule);border-radius:10px;transition:border-color .15s,background-color .15s}
+.pn{display:flex;flex-direction:column;gap:4px;padding:18px 20px;border:1px solid var(--rule);border-radius:10px}
 .pn:hover{border-color:var(--rule-strong);background:var(--surface)}
 .pn.next{text-align:right;grid-column:2}
 .pn-l{font-size:13px;color:var(--ink-3)}
