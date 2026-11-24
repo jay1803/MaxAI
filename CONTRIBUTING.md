@@ -10,6 +10,7 @@
 
    ```bash
    python3 scripts/check_public.py
+   python3 scripts/check_lists.py
    .venv/bin/mkdocs build --strict
    ```
 
