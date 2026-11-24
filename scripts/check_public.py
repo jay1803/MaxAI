@@ -8,8 +8,8 @@ Two layers:
    Read from the file named in PRIVATE_TERMS_FILE, or from the PRIVATE_TERMS
    environment variable (one term per line). The list is never committed.
    Terms match case-insensitively. Prefix a term with "=" to match its exact
-   case, for names that are also ordinary words (for example "=Max", which
-   should not match the CSS property "max-width").
+   case, for names that are also ordinary words (for example "=Will", which
+   should not match the word "will").
 
 Usage: python3 scripts/check_public.py [paths...]
 With no paths, all files tracked by Git are checked.

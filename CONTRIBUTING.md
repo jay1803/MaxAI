@@ -50,8 +50,8 @@ keys). It also reads an optional private term list:
 - in CI from the `PRIVATE_TERMS` repository secret, one term per line.
 
 Terms match case-insensitively. Prefix a term with `=` to match its exact
-case, for names that are also ordinary words (`=Max` does not match
-`max-width`).
+case, for names that are also ordinary words (`=Will` matches the name
+Will but not the word "will").
 
 The private term list never goes into the repository, because the list itself
 would be a leak. A failing check blocks the pull request.
