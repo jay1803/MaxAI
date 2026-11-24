@@ -1,3 +1,7 @@
+---
+summary: "Plain Markdown in Git: daily logs, pages per project and person, and a small briefing loaded every session."
+---
+
 # Memory
 
 Agents start every session fresh. Memory is what makes the twentieth session

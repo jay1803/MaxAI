@@ -3,7 +3,9 @@
 ## How a change lands
 
 1. Create a branch from `main`.
-2. Make the change. Keep one topic per pull request when possible.
+2. Make the change. Keep one topic per pull request when possible. Every
+   page starts with a `summary:` line in its front matter; the home page and
+   the page header show it.
 3. Run the checks:
 
    ```bash

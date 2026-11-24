@@ -1,3 +1,7 @@
+---
+summary: "States that mean whose turn it is, one issue per deliverable, and due dates that stay honest."
+---
+
 # Task tracker
 
 The tracker is the single ledger. These conventions make its state mean the

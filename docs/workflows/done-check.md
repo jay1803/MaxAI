@@ -1,3 +1,7 @@
+---
+summary: "Every agent-closed issue is checked by a fresh session that did not do the work."
+---
+
 # Independent Done check
 
 Every issue an agent moves to Done is checked once by a session that did not

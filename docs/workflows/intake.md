@@ -1,3 +1,7 @@
+---
+summary: "Turning chat, email and stalled work into issues, with filters, watermarks and three outcomes."
+---
+
 # Intake
 
 Intake turns signals into issues. It runs as one full daily sweep plus short

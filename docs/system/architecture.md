@@ -1,3 +1,7 @@
+---
+summary: "The components, and how one piece of work moves from a chat message to a checked result."
+---
+
 # Architecture
 
 ```mermaid

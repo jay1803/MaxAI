@@ -1,3 +1,7 @@
+---
+summary: "What an agent does from the start of a session until the issue says whose turn it is."
+---
+
 # Working an issue
 
 What an agent does from the moment a session starts on an issue until the turn

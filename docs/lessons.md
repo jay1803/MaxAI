@@ -1,3 +1,7 @@
+---
+summary: "Failure modes that each cost real time, written as rules."
+---
+
 # Lessons learned
 
 Each of these cost real time at least once. They are written as rules.

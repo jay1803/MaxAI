@@ -1,3 +1,7 @@
+---
+summary: "Decision card, chat task, plans, daily check, weekly review and the other templates that drive the loop."
+---
+
 # Issue templates
 
 Each template below is the description of a tracker issue template. Recurring

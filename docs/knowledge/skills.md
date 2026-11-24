@@ -1,3 +1,7 @@
+---
+summary: "Reusable procedures in folders. When to create one, how families work, and the weekly review."
+---
+
 # Skills
 
 A skill is a reusable procedure in a folder: a `SKILL.md` with a name, a

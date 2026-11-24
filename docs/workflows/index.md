@@ -1,3 +1,7 @@
+---
+summary: "The recurring procedures in the order work moves through them, and a typical weekday."
+---
+
 # Workflows
 
 The recurring procedures, in the order work moves through them.

@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+{% block content %}
+  <section class="hero">
+    <h1 class="display"><span>How I work</span><span>with agents</span></h1>
+    {%- if page.meta.lead %}<p class="hero-lead">{{ page.meta.lead }}</p>{% endif %}
+    {%- set sections = nav|selectattr('children')|list %}
+    <p class="meta">
+      <span>{{ ns.items|length }} pages</span><span aria-hidden="true">·</span>
+      <span>{{ sections|length }} sections</span><span aria-hidden="true">·</span>
+      <span>Updated {{ build_date_utc.strftime('%B %Y') }}</span>
+    </p>
+  </section>
+
+  <div class="prose home-prose">
+    {{ page.content }}
+  </div>
+
+  <section class="feed" aria-label="All pages">
+    {%- set g = namespace(last='__none__') %}
+    {%- for it in ns.items if not it.page.is_homepage %}
+      {%- if it.section != g.last %}
+        <p class="feed-h">{{ it.section or ('Start' if it.n < 4 else 'Reference') }}</p>
+        {%- set g.last = it.section %}
+      {%- endif %}
+      <article class="entry">
+        <p class="meta"><span class="tnum">{{ num(it.n) }}</span></p>
+        <h2 class="entry-t"><a class="plain title-link" href="{{ it.page.url|url }}">{{ it.page.title }}</a></h2>
+        {%- if it.page.meta and it.page.meta.summary %}<p class="entry-s">{{ it.page.meta.summary }}</p>{% endif %}
+      </article>
+    {%- endfor %}
+  </section>
+{% endblock %}

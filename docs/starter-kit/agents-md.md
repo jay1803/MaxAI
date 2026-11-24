@@ -1,3 +1,7 @@
+---
+summary: "A starter rules file for your agents: authority, drafts, tracker conventions, checks and writing."
+---
+
 # Agent rules file
 
 A starter `AGENTS.md` for the agents that work for you. Keep it short: every

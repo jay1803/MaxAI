@@ -4,25 +4,15 @@ site_url: https://jay1803.github.io/MaxAI/
 docs_dir: docs
 strict: true
 
+repo_url: https://github.com/jay1803/MaxAI
+edit_uri: ""
+
 theme:
-  name: material
-  features:
-    - navigation.sections
-    - navigation.indexes
-    - navigation.top
-    - content.code.copy
-    - search.suggest
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Light mode
+  name: null
+  custom_dir: theme
+  locale: en
+
+plugins: []
 
 markdown_extensions:
   - admonition
@@ -38,7 +28,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:pymdownx.superfences.fence_div_format
 
 nav:
   - Home: index.md
@@ -66,11 +56,11 @@ nav:
       - Memory: knowledge/memory.md
       - Skills: knowledge/skills.md
       - Writing rules: knowledge/writing.md
-  - Tools: tools.md
-  - Lessons learned: lessons.md
   - Starter kit:
       - starter-kit/index.md
       - Agent rules file: starter-kit/agents-md.md
       - Issue templates: starter-kit/issue-templates.md
       - Routine prompts: starter-kit/routine-prompts.md
+  - Tools: tools.md
+  - Lessons learned: lessons.md
   - Changelog: changelog.md
