@@ -1,3 +1,7 @@
+---
+summary: "Ten ideas the rest of the system follows from. When a workflow disagrees with one, the workflow gets fixed."
+---
+
 # Principles
 
 These are the ideas the rest of the system follows from. When a workflow and a

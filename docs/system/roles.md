@@ -1,3 +1,7 @@
+---
+summary: "Split ownership by signal, not by topic, so two agents never handle the same thing."
+---
+
 # Roles
 
 Two agents watching the same signals will either both act (duplicate work) or

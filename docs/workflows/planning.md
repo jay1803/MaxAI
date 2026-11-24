@@ -1,3 +1,7 @@
+---
+summary: "Daily and weekly plans from the tracker, and a quarterly question: what would my successor do first?"
+---
+
 # Planning
 
 Planning runs from issue templates: a weekly plan every Monday, a daily plan

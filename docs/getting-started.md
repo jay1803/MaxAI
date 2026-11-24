@@ -1,3 +1,7 @@
+---
+summary: "The smallest version you can run this week, and the order to add the rest over a month."
+---
+
 # Getting started
 
 You do not need the whole system on day one. This order gives value early and

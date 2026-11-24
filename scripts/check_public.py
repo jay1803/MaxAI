@@ -7,6 +7,9 @@ Two layers:
 2. An optional private term list (employer, people, products, workspaces).
    Read from the file named in PRIVATE_TERMS_FILE, or from the PRIVATE_TERMS
    environment variable (one term per line). The list is never committed.
+   Terms match case-insensitively. Prefix a term with "=" to match its exact
+   case, for names that are also ordinary words (for example "=Will", which
+   should not match the word "will").
 
 Usage: python3 scripts/check_public.py [paths...]
 With no paths, all files tracked by Git are checked.
@@ -83,7 +86,12 @@ def check_file(path: Path, terms: list[re.Pattern[str]]) -> list[str]:
 
 def main(argv: list[str]) -> int:
     paths = [Path(p) for p in argv] if argv else tracked_files()
-    terms = [re.compile(r"(?<![A-Za-z])" + re.escape(t) + r"(?![A-Za-z])", re.I) for t in private_terms()]
+    terms = []
+    for t in private_terms():
+        exact = t.startswith("=")
+        word = t[1:] if exact else t
+        flags = 0 if exact else re.I
+        terms.append(re.compile(r"(?<![A-Za-z])" + re.escape(word) + r"(?![A-Za-z])", flags))
     problems = [p for path in paths for p in check_file(path, terms)]
     for p in problems:
         print(p)

@@ -1,3 +1,7 @@
+---
+summary: "Files to copy: an agent rules file, issue templates and routine prompts."
+---
+
 # Templates
 
 Copy these and adapt them. Placeholders are in angle brackets.

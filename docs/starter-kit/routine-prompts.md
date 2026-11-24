@@ -1,3 +1,7 @@
+---
+summary: "Skeleton prompts for the scheduled routines, with the shared guard and report line."
+---
+
 # Routine prompts
 
 Skeletons for the scheduled routines. Each routine runs in a fresh session,

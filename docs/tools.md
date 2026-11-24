@@ -1,3 +1,7 @@
+---
+summary: "The current stack, the job each tool does, and what any replacement needs."
+---
+
 # Tools
 
 The method matters more than the tools. This is the current stack, the job

@@ -1,3 +1,7 @@
+---
+summary: "Every week: classify corrections, fix each root cause in one place, and check last week's fixes."
+---
+
 # Improvement loop
 
 The system changes itself every week, but every change is treated as a

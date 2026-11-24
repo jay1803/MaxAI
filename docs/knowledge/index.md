@@ -1,3 +1,7 @@
+---
+summary: "How the agents remember, how they learn procedures, and how they write."
+---
+
 # Knowledge
 
 How the agents know things and how they write.

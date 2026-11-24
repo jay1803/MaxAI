@@ -10,7 +10,7 @@ data, employer data and anything that only works in one private setup are left
 out on purpose.
 
 The content is published as a website from `docs/` with
-[MkDocs Material](https://squidfunk.github.io/mkdocs-material/):
+[MkDocs](https://www.mkdocs.org/) and a small custom theme in `theme/`:
 <https://jay1803.github.io/MaxAI/>. Every merge to `main` updates the site.
 
 ## Layout
@@ -23,6 +23,7 @@ The content is published as a website from `docs/` with
 | `docs/knowledge/` | Memory, skills and writing rules. |
 | `docs/starter-kit/` | Copy-ready templates: agent rules file, issue templates, routine prompts. |
 | `scripts/check_public.py` | Public-safety check run on every pull request. |
+| `theme/` | The site's templates, styles and scripts. |
 | `mkdocs.yml` | Site configuration and navigation. |
 | `AGENTS.md`, `.agents/` | Rules for agents that edit this repository. |
 

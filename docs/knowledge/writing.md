@@ -1,3 +1,7 @@
+---
+summary: "Conclusion first, plain words, facts kept apart from inference. Rules for replies and for drafts."
+---
+
 # Writing rules
 
 These rules apply to every reply to the owner and every text written for or on

@@ -1,3 +1,7 @@
+---
+summary: "One question, one click, a default and a deadline. Reversible defaults run on silence; the rest never do."
+---
+
 # Decision cards
 
 A decision card asks the owner for exactly one judgment, with everything

@@ -1,3 +1,7 @@
+---
+summary: "Four tiers and a short whitelist decide what agents do alone and what needs the owner."
+---
+
 # Authority
 
 Agents need a clear answer to "may I do this without asking?". The answer

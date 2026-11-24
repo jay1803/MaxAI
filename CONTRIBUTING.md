@@ -3,7 +3,9 @@
 ## How a change lands
 
 1. Create a branch from `main`.
-2. Make the change. Keep one topic per pull request when possible.
+2. Make the change. Keep one topic per pull request when possible. Every
+   page starts with a `summary:` line in its front matter; the home page and
+   the page header show it.
 3. Run the checks:
 
    ```bash
@@ -46,6 +48,10 @@ keys). It also reads an optional private term list:
 
 - locally from the file named in `PRIVATE_TERMS_FILE`, one term per line;
 - in CI from the `PRIVATE_TERMS` repository secret, one term per line.
+
+Terms match case-insensitively. Prefix a term with `=` to match its exact
+case, for names that are also ordinary words (`=Will` matches the name
+Will but not the word "will").
 
 The private term list never goes into the repository, because the list itself
 would be a leak. A failing check blocks the pull request.

@@ -1,3 +1,7 @@
+---
+summary: "Anything other people will read is prepared in place and left unsent, then measured by how much the owner edits."
+---
+
 # Drafts for review
 
 Anything other people will read is a draft for the owner: chat messages and

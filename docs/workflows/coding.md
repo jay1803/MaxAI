@@ -1,3 +1,7 @@
+---
+summary: "Agents write code in a worktree and a separate read-only run reviews the frozen diff."
+---
+
 # Agent-written code
 
 Code the agents depend on (the relay, scripts, tooling) is maintained by the
