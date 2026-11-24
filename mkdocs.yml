@@ -1,0 +1,75 @@
+site_name: MaxAI
+site_description: How one person runs product work with a team of AI agents, written so others can copy it.
+docs_dir: docs
+strict: true
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - Principles: principles.md
+  - Getting started: getting-started.md
+  - System:
+      - system/index.md
+      - Architecture: system/architecture.md
+      - Roles: system/roles.md
+      - Authority: system/authority.md
+      - Task tracker: system/task-tracker.md
+  - Workflows:
+      - workflows/index.md
+      - Intake: workflows/intake.md
+      - Working an issue: workflows/working-an-issue.md
+      - Decision cards: workflows/decision-cards.md
+      - Drafts for review: workflows/drafts-for-review.md
+      - Independent Done check: workflows/done-check.md
+      - Watching for replies: workflows/reply-watch.md
+      - Planning: workflows/planning.md
+      - Agent-written code: workflows/coding.md
+      - Improvement loop: workflows/improvement-loop.md
+  - Knowledge:
+      - knowledge/index.md
+      - Memory: knowledge/memory.md
+      - Skills: knowledge/skills.md
+      - Writing rules: knowledge/writing.md
+  - Tools: tools.md
+  - Lessons learned: lessons.md
+  - Starter kit:
+      - starter-kit/index.md
+      - Agent rules file: starter-kit/agents-md.md
+      - Issue templates: starter-kit/issue-templates.md
+      - Routine prompts: starter-kit/routine-prompts.md
+  - Changelog: changelog.md
