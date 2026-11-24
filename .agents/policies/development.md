@@ -11,5 +11,6 @@ branch.
   owner reviews and merges.
 - Do not force-push a branch that someone else has reviewed. Add commits
   instead.
-- Publishing the site (running the `pages` workflow or changing Pages settings)
-  needs the owner's explicit approval, separately from merging.
+- Merging to `main` publishes the site through the `pages` workflow, so the
+  owner's merge is the publish approval. Changing Pages settings or repository
+  visibility still needs the owner's explicit approval.

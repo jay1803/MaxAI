@@ -13,6 +13,7 @@
 
 4. Open a pull request against `main`. Fill in the template checklist.
 5. The owner reviews and merges. Agents never merge in this repository.
+   Merging publishes: the `pages` workflow deploys `main` to the site.
 
 Every update to the way of working is a new pull request, so the pull request
 history doubles as the change history of the method. Add a line to
