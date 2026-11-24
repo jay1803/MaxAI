@@ -11,7 +11,7 @@ out on purpose.
 
 The content is published as a website from `docs/` with
 [MkDocs](https://www.mkdocs.org/) and a small custom theme in `theme/`:
-<https://jay1803.github.io/MaxAI/>. Every merge to `main` updates the site.
+<https://work.maxoxo.me/>. Every merge to `main` updates the site.
 
 ## Layout
 
