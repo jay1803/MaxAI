@@ -23,6 +23,7 @@ The content is published as a website from `docs/` with
 | `docs/knowledge/` | Memory, skills and writing rules. |
 | `docs/starter-kit/` | Copy-ready templates: agent rules file, issue templates, routine prompts. |
 | `scripts/check_public.py` | Public-safety check run on every pull request. |
+| `scripts/check_lists.py` | Fails when a nested list is indented by fewer than four spaces, which breaks list rendering. |
 | `theme/` | The site's templates, styles and scripts. |
 | `mkdocs.yml` | Site configuration and navigation. |
 | `AGENTS.md`, `.agents/` | Rules for agents that edit this repository. |

@@ -10,14 +10,16 @@ hypothesis with a check date and an undo.
 ## Weekly review
 
 1. **Metrics** for the last seven days, from a script over the tracker:
-   - owner interventions per delivered result (the north-star metric);
-   - proactive deliveries (results nobody asked for);
-   - rework rate (issues reopened or failed checks);
-   - orchestration overhead (owner comments that only steer agents);
-   - execution failures (dropped runs, failed writes);
-   - owner interventions inside the agents' own project (target zero);
-   - draft quality: share sent unchanged, median draft-to-sent similarity.
-   Correct keyword-based counts by hand and report raw and corrected numbers.
+    - owner interventions per delivered result (the north-star metric);
+    - proactive deliveries (results nobody asked for);
+    - rework rate (issues reopened or failed checks);
+    - orchestration overhead (owner comments that only steer agents);
+    - execution failures (dropped runs, failed writes);
+    - owner interventions inside the agents' own project (target zero);
+    - draft quality: share sent unchanged, median draft-to-sent similarity.
+
+    Correct keyword-based counts by hand and report raw and corrected numbers.
+
 2. **Classify every correction** from the owner by root cause: missing
    context, wrong rule, tool failure, or wrong judgment.
 3. **Fix the top causes**, at most three, each in exactly one place: a memory
