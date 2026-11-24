@@ -1,0 +1,21 @@
+{
+  "files": {
+    ".agents/policies/development.md": {
+      "module": "development",
+      "revision": "595068cb9a59af0c3049c85074578a75f7f0638d",
+      "sha256": "0daed2f0e5a36d456313005619842a3485a28441faa3bd8596920887ef3f01e8"
+    },
+    ".agents/policies/validation.md": {
+      "module": "validation",
+      "revision": "595068cb9a59af0c3049c85074578a75f7f0638d",
+      "sha256": "c359f6a475051c8a12419115a7fcc9a98e77bde286c072600f760a6c6d789405"
+    },
+    "AGENTS.md": {
+      "module": "core",
+      "revision": "595068cb9a59af0c3049c85074578a75f7f0638d",
+      "sha256": "89815622321721509a4404aa77fe6abb4787e103cf64f2e3196eaaf7f29261f0"
+    }
+  },
+  "schema": "agent-repo-template/v1",
+  "source": "jay1803/agent-repo-template"
+}
